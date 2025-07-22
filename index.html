@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link href="portfolio.css" rel="stylesheet">
+    <script src="portfolio.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Add inside <body> -->
+<canvas id="matrixCanvas"></canvas>
+
+
+    </style>
+</head>
+<body>
+  
+    <!-- Navigation -->
+<nav id="navbar" style="background: #000; padding: 15px 30px;">
+  <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center;">
+    
+    <!-- Logo on Left -->
+    <div class="logo" style="color: white; font-size: 24px; font-weight: bold;">
+      Portfolio
+    </div>
+    <div class="background-animation"></div>
+
+    <!-- Nav Links on Right -->
+    <ul class="nav-links" id="navLinks" style="display: flex; gap: 25px; list-style: none; margin: 0; padding: 0;">
+      <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+      <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+      <li><a href="#resume" style="color: white; text-decoration: none;">Resume</a></li>
+      <li><a href="#skills" style="color: white; text-decoration: none;">Skills</a></li>
+      <li><a href="#achievements" style="color: white; text-decoration: none;">Achievements</a></li>
+      <li><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
+      <li><a href="#certificate's" style="color: white; text-decoration: none;">Certificate's</a></li>
+      <li><a href="#experience" style="color: white; text-decoration: none;">Experience</a></li>
+      <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+          
+            <h1 class="floating">Welcome to My Portfolio</h1>
+            <p data-aos="fade-up" data-aos-delay="300">"Turning data into decisions, and algorithms into impact."</p>
+            <a href="#about" class="cta-button" data-aos="fade-up" data-aos-delay="600">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="pic.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Hello! I'm Shobhit Singh</h3>
+                      <p>I'm a B.Tech student specializing in Artificial Intelligence and Machine Learning. I've just completed my first year, and I'm deeply passionate about building intelligent digital systems that solve real-world problems.</p>
+          <p>My journey into tech started with curiosity and excitement to understand how smart applications work. I've begun exploring core programming concepts, web development, and the foundations of AI/ML technologies.</p>
+          <p>I'm constantly learning new things, participating in projects and events, and growing my skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="resume" class="section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Resume</h2>
+        <div class="resume-content" data-aos="fade-up" data-aos-delay="300">
+            <p>Download my resume to learn more about my education, skills, and projects.</p>
+            <div class="resume-buttons">
+                 <a href="shobhit-resume.pdf" class="resume-download" download>
+                 <i class="fas fa-download"></i> Download Resume
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-name">
+                    <span>HTML & CSS</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-name">
+                    <span>Python</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-name">
+                    <span>C & C++</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill-name">
+                    <span>Flask</span>
+                    <span>50%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 50%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="skill-name">
+                    <span>Tally</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="700">
+                <div class="skill-name">
+                    <span>Excel</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <!-- ✅ New Skill: Communication -->
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                <div class="skill-name">
+                    <span>Communication</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <!-- ✅ New Skill: Leadership -->
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="900">
+                <div class="skill-name">
+                    <span>Leadership</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Achievements Section -->
+<section id="achievements" class="section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Achievements</h2>
+    <div class="achievements-grid">
+      
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>SRM University Hackathon</h3>
+        <p>
+          Participated in a national-level hackathon at SRM University with Team Binod.
+          Gained hands-on experience in collaborative problem-solving.
+        </p>
+        <a href="srm-hack.pdf" class="resume-download" download style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #00ff5e; color: #000; text-decoration: none; border-radius: 6px; font-weight: 600;">View Image</a>
+      </div>
+
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>HackIndia 2025 Participant</h3>
+        <p>
+          Participated in HackIndia 2025 Hackathon and worked on real-world tech challenges with team Coders(ASAR).
+          Learned about teamwork, design thinking, and fast-paced prototyping.
+        </p>
+        <a href="asar-hack.pdf" class="resume-download" download style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #00ff5e; color: #000; text-decoration: none; border-radius: 6px; font-weight: 600;">View Image</a>
+      </div>
+
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Best Speaker Award</h3>
+        <p>
+          Won Best Speaker Medal by Shushil Kumar Agrawal Sir, in college for delivering impactful presentations and
+          confidently communicating ideas during events and seminars.
+        </p>
+        <a href="avor-award.pdf" class="resume-download" download style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #00ff5e; color: #000; text-decoration: none; border-radius: 6px; font-weight: 600;">View Image</a>
+      </div>
+
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Best Club Award</h3>
+        <p>
+          Received the Best Club Award(CRC) in college for contributing actively to organizing technical workshops,
+          student engagement activities, and team leadership.
+        </p>
+        <a href="crc-award.pdf" class="resume-download" download style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #00ff5e; color: #000; text-decoration: none; border-radius: 6px; font-weight: 600;">View Image</a>
+      </div>
+
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+        <h3>Act In Theatre</h3>
+        <p>
+          Acted in theatre in college as an impactful character in Mahabharat.
+        </p>
+        <a href="theatre-award.pdf" class="resume-download" download style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #00ff5e; color: #000; text-decoration: none; border-radius: 6px; font-weight: 600;">View Image</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS CSS (Optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body style="margin:0; font-family:Segoe UI, sans-serif; background-color:black; color:white;">
+
+  <!-- Projects Section -->
+  <section id="projects" class="section"></section>
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <div class="projects-grid">
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+  <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center; padding: 0 20px;">
+
+    <!-- Card 1 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="face.png" alt="Face Attendance System" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime; margin-top:15px;">Face Attendance System</h3>
+      <p style="color:#ccc;">
+        A smart attendance system using face recognition without external libraries.
+      </p>
+      <div style="margin-top:15px; display:flex; gap:10px; align-items:center;">
+        <button style="background:lime; color:black; padding:10px 16px; border:none; border-radius:5px; font-weight:bold;">View Image</button>
+        <a href="https://www.linkedin.com/in/shobhit-singh-705553317" target="_blank" style="color:lime; font-size:24px;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="dar.png" alt="Darjeeling Tourism" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime;">Darjeeling Tourism</h3>
+      <p style="color:#ccc;">
+        A beautifully designed tourism website showing attractions, bookings, and photo gallery.
+      </p>
+      <div style="margin-top:15px; display:flex; gap:10px; align-items:center;">
+        <a href="https://darjeeling-tourism-lyart.vercel.app" target="_blank">
+          <button style="background:lime; color:black; padding:10px 16px; border:none; border-radius:5px; font-weight:bold;">Visit Website</button>
+        </a>
+        <a href="https://github.com/shobhit7400" target="_blank" style="color:lime; font-size:24px;">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="ime.png" alt="Time Complexity Visualizer" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime;">Time Complexity Visualizer</h3>
+      <p style="color:#ccc;">
+        A visual tool to understand Big-O complexities using animated charts and comparisons.
+      </p>
+      <button style="background:lime; color:black; padding:10px 16px; border:none; border-radius:5px; font-weight:bold; margin-top:15px;">
+        Coming Soon
+      </button>
+    </div>
+
+  </div>
+  <!-- Certificate Section -->
+   <section id="certificate's" class="section"></section>
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Certificate's</h2>
+    <div class="certificate's-grid">
+<!-- <div style="width:60px; height:3px; background:#00ff00; margin:10px auto 40px;"></div> -->
+
+<!-- Container for 1st row -->
+<div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+
+  <!-- Row 1 - 3 Certificates -->
+  <div style="display:flex; gap:30px; justify-content:center; flex-wrap:wrap; width:100%;">
+    
+    <!-- Certificate 1 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="poster.jpg" alt="Certificate 1" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime; margin-top:15px;">Poster Presentation</h3>
+      <p style="color:#ccc;">In College</p>
+        <p style="color:#ccc;">Issued: Jan 2024</p>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="unstop.jpg" alt="Certificate 2" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime; margin-top:15px;">Unstop Hackathon</h3>
+       <p style="color:#ccc;">In SRM University Delhi,NCR(Intra-University)</p>
+      <p style="color:#ccc;">Issued: March 2024</p>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="india.jpg" alt="Certificate 3" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime; margin-top:15px;">HACKINDIA</h3>
+      <p style="color:#ccc;">India's Biggest Ai & Web Hackathon</p>
+      <p style="color:#ccc;">Issued: April 2024</p>
+    </div>
+  </div>
+
+  <!-- Row 2 - 2 Certificates -->
+  <div style="display:flex; gap:30px; justify-content:center; flex-wrap:wrap; width:100%; margin-top:30px;">
+    
+    <!-- Certificate 4 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="edureka.jpg" alt="Certificate 4" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime; margin-top:15px;">AI in Industry - Edureka</h3>
+      <p style="color:#ccc;">Meet real-world AI</p>
+      <p style="color:#ccc;">Issued: May 2024</p>
+    </div>
+
+    <!-- Certificate 5 -->
+    <div style="background:#111; padding:20px; border-radius:12px; width:300px; border-top:3px solid lime; box-shadow:0 0 15px rgba(0,255,0,0.3);">
+      <img src="ai.jpg" alt="Certificate 5" style="width:100%; border-radius:10px;">
+      <h3 style="color:lime; margin-top:15px;">AI ML Workshop</h3>
+       <p style="color:#ccc;">In College</p>
+      <p style="color:#ccc;">Issued: June 2024</p>
+    </div>
+  </div>
+</div>
+
+<!-- Experience Section -->
+  <section id="experience" class="section"></section>
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+    <div class="experience-grid">
+<div style="display:flex; justify-content:center;">
+  <div style="background:#111; padding:30px; border-radius:15px; width:90%; max-width:800px; border-left:5px solid lime; box-shadow:0 0 20px rgba(0,255,0,0.3);">
+
+    <!-- Placeholder Image Section -->
+    <div style="width:100%; height:200px; background:#222; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#666; font-size:18px;">
+      Image Placeholder
+    </div>
+
+    <!-- Text Below Image -->
+    <h3 style="color:lime; margin-top:20px;">Internship in ( )</h3>
+    <p style="color:#ccc;">Coming Soon...</p>
+
+  </div>
+</div>
+
+  <!-- Contact Section -->
+    <section id="contact" class="section"></section>
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+    <div class="contact-grid">
+<section id="contactSection" style="margin-top:80px; padding:40px 20px; background:#000;">
+  <div style="max-width:600px; margin:0 auto;">
+ 
+    <!-- Contact Form -->
+    <form id="contactForm" style="display:flex; flex-direction:column; gap:20px;" onsubmit="handleSubmit(event)">
+      <div>
+        <label for="name" style="color:lime; font-weight:bold;">Name</label>
+        <input type="text" id="name" name="name" required style="width:100%; padding:10px; border-radius:5px; border:1px solid lime; background:#111; color:white;">
+      </div>
+      <div>
+        <label for="email" style="color:lime; font-weight:bold;">Email</label>
+        <input type="email" id="email" name="email" required style="width:100%; padding:10px; border-radius:5px; border:1px solid lime; background:#111; color:white;">
+      </div>
+      <div>
+        <label for="message" style="color:lime; font-weight:bold;">Message</label>
+        <textarea id="message" name="message" rows="6" required style="width:100%; padding:10px; border-radius:5px; border:1px solid lime; background:#111; color:white;"></textarea>
+      </div>
+      <button type="submit" style="background:lime; color:black; padding:12px; border:none; border-radius:30px; font-weight:bold; font-size:16px;">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Thank You Button -->
+<div id="thankYouMessage" style="display:none; background:#000; padding:80px 20px; text-align:center;">
+  <button style="background:lime; color:black; padding:14px 28px; border:none; border-radius:30px; font-size:18px; font-weight:bold;">Thank You</button>
+</div>
+
+
+
+ <!-- Footer -->
+<footer style="background:#000; color:#aaa; text-align:center; padding:20px;">
+  <div style="margin-bottom:10px;">
+
+    <a href="https://www.linkedin.com/in/shobhit-singh-705553317" target="_blank" style="color:lime; font-size:24px; margin:0 10px;">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/shobhit7400" target="_blank" style="color:lime; font-size:24px; margin:0 10px;">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.instagram.com/_shob.hit_/" target="_blank" style="color:lime; font-size:24px; margin:0 10px;">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="mailto:shobhitsinghssssss@gmail.com" style="color:lime; font-size:24px; margin:0 10px;">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="tel:8004829402" style="color:lime; font-size:24px; margin:0 10px;">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+
+  </div>
+  <p>&copy; 2025 Shobhit Singh. All rights reserved.</p>
+</footer>
+
+
+  <!-- AOS Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
